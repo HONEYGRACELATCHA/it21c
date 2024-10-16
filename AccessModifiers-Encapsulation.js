@@ -34,7 +34,7 @@ class Person {
         personElement.innerHTML = `
             <strong>Name:</strong> ${this.name}<br>
             <strong>Age:</strong> ${this.age}<br>
-            <strong>Hobby:</strong> ${this.hobbies}
+            <strong>Hobbies:</strong> ${this.hobbies}
         `;
     }
 }

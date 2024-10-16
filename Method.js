@@ -2,26 +2,26 @@
 const person1 = {
     name: "Honey Gace",
     age: 19,
-    hobby: "Reading",
+    hobbies: "Reading & Singing",
 }
 //Process and Output
 console.log("Name: " + person1.name);
 console.log("Age: " + person1.age);
-console.log("Hobby: " + person1.hobby);
+console.log("Hobbies: " + person1.hobbies);
 console.log("--------------------------------");
 // Class definition
 class Person {
     constructor(name, age, hobby) {
         this.name = name;
         this.age = age;
-        this.hobby = hobby;
+        this.hobbies = hobbies;
     }
 
     // Method to display person information in the console
     displayInfo() {
         console.log("Name: " + this.name);
         console.log("Age: " + this.age);
-        console.log("Hobby: " + this.hobby);
+        console.log("Hobbies: " + this.hobbies);
     }
     // Method to display person information in the HTML
     displayInfoHTML() {
@@ -29,12 +29,12 @@ class Person {
         personElement.innerHTML = `
             <strong>Name:</strong> ${this.name}<br>
             <strong>Age:</strong> ${this.age}<br>
-            <strong>Hobby:</strong> ${this.hobby}
+            <strong>Hobbies:</strong> ${this.hobbies}
         `;
     }
 }
 // Creating an object (instance) of the Person class
-const personOne = new Person('Honey Grace', 19, 'Reading');
+const personOne = new Person('Honey Grace', 19, 'Reading & Singing');
 
 // Calling methods
 personOne.displayInfo();
