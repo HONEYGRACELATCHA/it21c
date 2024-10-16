@@ -1,6 +1,6 @@
 //Input
 const person1 = {
-    name: "Honey Gace",
+    name: "Honey Grace",
     age: 19,
     hobbies: "Reading & Singing",
 }
