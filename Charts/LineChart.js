@@ -20,4 +20,9 @@ class ChartCreator {
             console.error('There has been a problem with your fetch operation:', error);
         }
     }
+    createCharts() {
+        // This method will be overridden in subclasses
+        throw new Error('createCharts() must be implemented in subclasses');
+    }
 }
+
