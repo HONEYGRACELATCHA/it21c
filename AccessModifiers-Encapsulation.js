@@ -19,7 +19,7 @@ class Person {
         return this.#age;
     }
 
-    get hobby() {
+    get hobbies() {
         return this.#hobbies;
     }
     // Method to display person information in the console
