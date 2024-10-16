@@ -38,8 +38,26 @@ class Person {
         `;
     }
 }
+class Student extends Person {
+    constructor(name, age, hobbies, program) {
+        super(name, age, hobbies);
+        this.program = program;
+    }
+    // Overriding the displayInfo method
+    displayInfo() {
+        super.displayInfo();
+        console.log("Program: " + this.program);
+    }
+    // Extending the displayInfoHTML method
+    displayInfoHTML() {
+        super.displayInfoHTML();
+        const personElement = document.getElementById('personOne');
+        personElement.innerHTML += `<br><strong>Program:</strong> ${this.program}`;
+    }
+}
+
 // Creating an object (instance) of the Person class
-const personOne = new Person('Honey Grace Latcha', 19, 'Reading & Singing');
+const studenOne = new Student('Honey Grace Latcha', 19, 'Reading & Singing', 'Information Technology');
 
 // Calling methods
-personOne.displayInfo();
+studenOne.displayInfo();
